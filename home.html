@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JHELA - Home</title>
+
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#1a1a2e,#16213e,#0f0f23);
+color:#f5f5f5;
+margin:0;
+}
+
+.font-display{
+font-family:'Playfair Display',serif;
+}
+
+.glass{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.1);
+border-radius:20px;
+}
+
+.gold{
+background:linear-gradient(135deg,#d4af37,#f4e4ba,#d4af37);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.nav-link{
+cursor:pointer;
+transition:0.3s;
+}
+
+.nav-link:hover{
+color:#d4af37;
+}
+
+.section{
+display:none;
+padding:60px 20px;
+}
+
+.active{
+display:block;
+}
+
+.btn-gold{
+background:linear-gradient(135deg,#d4af37,#b8962e);
+color:#1a1a2e;
+padding:10px 25px;
+border-radius:40px;
+font-weight:600;
+border:none;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="glass px-10 py-4 flex items-center justify-between">
+
+<h1 class="font-display text-2xl gold">JHELA</h1>
+
+<div class="flex gap-8 text-sm">
+  
+  <span class="nav-link" onclick="showSection('home')">Home</span>
+  <span class="nav-link" onclick="showSection('about')">About</span>
+  <span class="nav-link" onclick="showSection('skills')">Skills</span>
+  <span class="nav-link" onclick="showSection('achievements')">Achievements</span>
+  <span class="nav-link" onclick="showSection('contact')">Contact</span>
+  
+  <a href="index.html" class="nav-link text-yellow-400">
+    Back to Login
+  </a>
+  
+</div>
+
+</nav>
+
+<!-- HOME -->
+
+<section id="home" class="section active">
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+<div>
+
+<h1 class="font-display text-3xl gold mb-4">
+Hello, I'm Jhelamae Derigay
+</h1>
+
+<p class="text-gray-300 leading-relaxed">
+Welcome to my personal website. This page introduces who I am,
+my interests, skills, achievements, and ways to contact me.
+I enjoy learning technology and creating digital projects
+that help improve my knowledge and creativity.
+</p>
+
+<div class="mt-8">
+
+</div>
+
+<div class="flex justify-center">
+
+<img src="profile.jpeg"
+class="w-64 h-64 object-cover rounded-full border-4 border-yellow-500 shadow-lg">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<h2 class="font-display text-4xl gold text-center mb-10">
+About Me
+</h2>
+
+<!-- INTRO -->
+
+<div class="max-w-3xl mx-auto text-center glass p-8 mb-12">
+
+<p class="text-gray-300 leading-relaxed">
+  My name is <b>Jhelamae Partosa Derigay</b>. I was born on <b>October 14, 2009</b> in <b>Quezon City</b>. I am currently <b>16 years old</b> and my zodiac sign is <b>Libra</b>.
+  
+  I describe myself as a <b>friendly person</b> who enjoys spending time with family and friends. I like expressing creativity through painting, dancing, singing, and exploring digital activities such as social media and games. I am a <b>Jehovah’s Witness</b> and a <b>daddy’s girl</b>. This section shows different parts of my life including my hobbies, interests, favorite things, and my education.
+</p>
+</div>
+
+<!-- FAMILY -->
+
+<h3 class="text-2xl text-center mb-4 font-semibold">Family</h3>
+
+<div class="flex justify-center mb-12">
+
+<img src="family1.jpg"
+class="w-60 rounded-lg shadow-lg hover:scale-110 hover:-translate-y-2 transition duration-300">
+<img src="family2.jpg" class="w-60 rounded-lg shadow-lg hover:scale-110 hover:-translate-y-2 transition duration-300">
+
+</div>
+
+<!-- FRIENDS -->
+
+<h3 class="text-3xl text-center mb-4 font-semibold">Friends</h3>
+
+<div class="flex flex-wrap justify-center gap-4 mb-12">
+
+<img src="friend1.jpg" class="w-24 h-24 object-cover rounded-lg shadow-md hover:scale-110 hover:-translate-y-2 transition">
+<img src="friend2.jpg" class="w-24 h-24 object-cover rounded-lg shadow-md hover:scale-110 hover:-translate-y-2 transition">
+<img src="friend3.jpg" class="w-24 h-24 object-cover rounded-lg shadow-md hover:scale-110 hover:-translate-y-2 transition">
+<img src="friend4.jpg" class="w-24 h-24 object-cover rounded-lg shadow-md hover:scale-110 hover:-translate-y-2 transition">
+<img src="friend5.jpeg" class="w-24 h-24 object-cover rounded-lg shadow-md hover:scale-110 hover:-translate-y-2 transition">
+<img src="friend6.jpeg" class="w-24 h-24 object-cover rounded-lg shadow-md hover:scale-110 hover:-translate-y-2 transition">
+<img src="friend7.jpg" class="w-24 h-24 object-cover rounded-lg shadow-md hover:scale-110 hover:-translate-y-2 transition">
+<img src="friend8.jpg" class="w-24 h-24 object-cover rounded-lg shadow-md hover:scale-110 hover:-translate-y-2 transition">
+
+</div>
+
+<!-- HOBBIES -->
+
+<h3 class="text-2xl text-center mb-4 font-semibold">Hobbies</h3>
+
+<div class="flex flex-wrap justify-center gap-6 mb-12">
+
+<div class="text-center">
+<img src="ml.jpg" class="w-32 rounded-lg hover:scale-110 hover:-translate-y-2 transition">
+<p class="text-sm mt-2">Playing Mobile
+<br>Legends</br></p>
+</div>
+
+<div class="text-center">
+<img src="tiktok.jpg" class="w-32 rounded-lg hover:scale-110 hover:-translate-y-2 transition">
+<p class="text-sm mt-2">Watching TikTok</p>
+</div>
+
+<div class="text-center">
+<img src="music.jpg" class="w-32 rounded-lg hover:scale-110 hover:-translate-y-2 transition">
+<p class="text-sm mt-2">Listening to Music</p>
+</div>
+
+<div class="text-center">
+<img src="painting.jpg" class="w-32 rounded-lg hover:scale-110 hover:-translate-y-2 transition">
+<p class="text-sm mt-2">Painting</p>
+</div>
+
+</div>
+
+<!-- MY PAINTINGS -->
+
+<h3 class="text-2xl text-center mb-4 font-semibold">My Paintings</h3>
+
+<div class="flex flex-wrap justify-center gap-6 mb-12">
+
+<img src="painting1.jpg" class="w-40 rounded-lg shadow-lg hover:scale-110 hover:-translate-y-2 transition">
+<img src="painting2.jpg" class="w-40 rounded-lg shadow-lg hover:scale-110 hover:-translate-y-2 transition">
+<img src="painting3.jpg" class="w-40 rounded-lg shadow-lg hover:scale-110 hover:-translate-y-2 transition">
+<img src="painting4.jpg" class="w-40 rounded-lg shadow-lg hover:scale-110 hover:-translate-y-2 transition">
+
+</div>
+
+<!-- INTERESTS -->
+
+
+<h3 class="text-2xl text-center mb-4 font-semibold">Interests</h3>
+
+<div class="flex justify-center gap-6 mb-12 flex-wrap">
+  
+  <!-- Singing Video -->
+  <video class="w-32 rounded-lg shadow-lg hover:scale-105 hover:-translate-y-2 transition" controls>
+    <source src="singing.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <!-- Dancing Video -->
+  <video class="w-32 rounded-lg shadow-lg hover:scale-105 hover:-translate-y-2 transition" controls>
+    <source src="dancing.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <!-- Coding Picture -->
+  <img src="coding.jpg" class="w-32 rounded-lg shadow-lg hover:scale-110 hover:-translate-y-2 transition">
+  <img src="cooking.jpg" class="w-32 rounded-lg shadow-lg hover:scale-110 hover:-translate-y-2 transition">
+
+</div>
+
+<!-- EDUCATION -->
+
+<h3 class="text-2xl text-center mb-4 font-semibold">Education</h3>
+
+<div class="glass max-w-xl mx-auto p-6 text-center mb-12">
+
+<p class="text-gray-300">
+<b>School:</b> Taal High School-Annex <br>
+<b>Grade Level:</b> Grade 11
+</p>
+
+<p class="mt-4 text-gray-300">
+<b>Favorite Subjects:</b><br>
+Computer Programming<br>
+Physical Science<br>
+General Mathematics<br>
+FPL
+</p>
+
+</div>
+
+<!-- FAVORITE APPS -->
+
+<h3 class="text-2xl text-center mb-4 font-semibold">Favorite Apps</h3>
+
+<div class="flex justify-center gap-8 mb-12">
+
+<img src="facebook_logo.png" class="w-16 hover:scale-110 hover:-translate-y-2 transition">
+<img src="tiktok_logo.png" class="w-16 hover:scale-110 hover:-translate-y-2 transition">
+<img src="instagram_logo.png" class="w-16 hover:scale-110 hover:-translate-y-2 transition">
+
+</div>
+
+<!-- FAVORITE FAST FOOD -->
+
+<h3 class="text-2xl text-center mb-4 font-semibold">Favorite Fast Food</h3>
+
+<div class="flex justify-center gap-8 mb-12 flex-wrap">
+
+<div class="text-center">
+<img src="jollibee.png"
+class="w-20 hover:scale-110 hover:-translate-y-2 transition">
+<p class="text-sm mt-2">Jollibee</p>
+</div>
+
+<div class="text-center">
+<img src="mang inasal.png"
+class="w-20 hover:scale-110 hover:-translate-y-2 transition">
+<p class="text-sm mt-2">Mang Inasal</p>
+</div>
+
+<div class="text-center">
+<img src="snr.png"
+class="w-20 hover:scale-110 hover:-translate-y-2 transition">
+<p class="text-sm mt-2">S&R</p>
+</div>
+
+</div>
+
+<!-- FUN FACTS -->
+
+<h3 class="text-2xl text-center mb-6 font-semibold">Fun Facts</h3>
+
+<div class="flex flex-wrap justify-center gap-6 mb-12">
+
+<div class="glass w-48 text-center p-3 hover:-translate-y-2 transition">
+
+<img src="blackwhite.jpg"
+class="w-full h-28 object-cover rounded-lg mb-2">
+
+<p class="text-sm text-gray-300">
+Favorite colors: Black & White
+</p>
+
+</div>
+
+
+<div class="glass w-48 text-center p-3 hover:-translate-y-2 transition">
+
+<img src="takoyaki.jpg"
+class="w-full h-28 object-cover rounded-lg mb-2">
+
+<p class="text-sm text-gray-300">
+My favorite snack is Takoyaki
+</p>
+
+</div>
+
+
+<div class="glass w-48 text-center p-3 hover:-translate-y-2 transition">
+
+<img src="afritada.jpg"
+class="w-full h-28 object-cover rounded-lg mb-2">
+
+<p class="text-sm text-gray-300">
+Favorite dish: Afritada
+</p>
+
+</div>
+
+
+<div class="glass w-48 text-center p-3 hover:-translate-y-2 transition">
+
+<img src="cats.jpg"
+class="w-full h-28 object-cover rounded-lg mb-2">
+
+<p class="text-sm text-gray-300">
+I have 2 boy cats that I love taking care of
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS SECTION -->
+
+<section id="skills" class="section">
+  
+  <div class="max-w-4xl mx-auto">
+    
+    <h2 class="font-display text-4xl gold text-center mb-8">Skills</h2>
+    
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <!-- Coding / Programming -->
+      <div class="glass p-6 text-center hover:-translate-y-2 transition">
+        <img src="coding_icon.png" class="w-20 mx-auto mb-4">
+        <h3 class="font-semibold text-lg">Coding / Programming</h3>
+      </div>
+      
+      <!-- Problem Solving -->
+      <div class="glass p-6 text-center hover:-translate-y-2 transition">
+        <img src="problem_solving_icon.png" class="w-20 mx-auto mb-4">
+        <h3 class="font-semibold text-lg">Problem Solving</h3>
+      </div>
+      
+      <!-- Creative Arts -->
+      <div class="glass p-6 text-center hover:-translate-y-2 transition">
+        <img src="painting_icon.png" class="w-20 mx-auto mb-4">
+        <h3 class="font-semibold text-lg">Creative Arts</h3>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  
+  <h2 class="font-display text-4xl gold text-center mb-10">
+    Achievements
+  </h2>
+  
+  <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+    
+    <!-- Academic Record -->
+    <div class="glass p-6">
+      <h3 class="text-xl font-semibold mb-3">Academic Record</h3>
+      <ul class="text-gray-300 list-disc list-inside">
+        <li>Consistent Top 1 – Grade 1 to Grade 2</li>
+        <li>Consistent With Honors – Grade 3 to Grade 7</li>
+        <li>Consistent With High Honors – Grade 8 to Grade 10</li>
+        <li>With Honors – Grade 11 (Current)</li>
+      </ul>
+    </div>
+    
+    <!-- Grade 8 -->
+    <div class="glass p-6">
+      <h3 class="text-xl font-semibold mb-3">Grade 8 Highlights</h3>
+      <ul class="text-gray-300 list-disc list-inside">
+        <li>Top Student in Science among 50 students</li>
+        <li>Best in Mathematics – All Quarters</li>
+        <li>SSG Chairperson</li>
+      </ul>
+    </div>
+    
+    <!-- Grade 9 -->
+    <div class="glass p-6">
+      <h3 class="text-xl font-semibold mb-3">Grade 9</h3>
+      <ul class="text-gray-300 list-disc list-inside">
+        <li>With High Honors – 1st to 3rd Quarter</li>
+        <li>With Highest Honors – 4th Quarter</li>
+      </ul>
+    </div>
+    
+    <!-- Grade 10 -->
+    <div class="glass p-6">
+      <h3 class="text-xl font-semibold mb-3">Grade 10</h3>
+      <ul class="text-gray-300 list-disc list-inside">
+        <li>With High Honors – All Quarters</li>
+        <li>Rank 13.5 out of 700+ students</li>
+        <li>News Writer in Filipino</li>
+        <li>Outstanding Performance in Filipino</li>
+        <li>Leadership Awardee</li>
+        <li>Best Dancer – Hip Hop</li>
+        <li>iCODE Participant</li>
+      </ul>
+    </div>
+    
+    <!-- Grade 11 -->
+    <div class="glass p-6">
+      <h3 class="text-xl font-semibold mb-3">Grade 11</h3>
+      <ul class="text-gray-300 list-disc list-inside">
+        <li>With Honors</li>
+        <li>SSLG P.O</li>
+        <li>3rd Place in Buwan ng Wika (Tula)</li>
+      </ul>
+    </div>
+    
+    <!-- Newspaper Feature -->
+    <div class="glass p-6 text-center">
+      <img src="newspaper.jpg" class="rounded-lg mb-3">
+      <p class="text-gray-300">Featured in School Newspaper</p>
+    </div>
+   
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="section">
+
+<div class="max-w-4xl mx-auto glass p-10">
+
+<h2 class="font-display text-4xl gold text-center mb-8">
+Contact Me
+</h2>
+
+<p class="text-center text-gray-300 mb-8">
+Connect with me through my social media or send me a message.
+</p>
+
+<!-- SOCIAL MEDIA LINKS -->
+
+<div class="flex justify-center gap-8 mb-10 text-lg">
+
+<a href="https://www.facebook.com/share/1EQPyTZact/?mibextid=wwXIfr"
+target="_blank"
+class="hover:text-yellow-400 transition">
+Facebook
+</a>
+
+<a href="https://www.tiktok.com/@jhlmdrgy?_r=1&_t=ZS-94jlog27rxx"
+target="_blank"
+class="hover:text-yellow-400 transition">
+TikTok
+</a>
+
+<a href="https://www.instagram.com/jhelamaepd"
+target="_blank"
+class="hover:text-yellow-400 transition">
+Instagram
+</a>
+
+</div>
+
+<!-- EMAIL FORM -->
+
+<div class="space-y-4">
+
+<input
+type="email"
+id="fromEmail"
+placeholder="Your Email"
+class="w-full p-3 rounded-lg bg-transparent border border-gray-600 text-white">
+
+<textarea
+id="message"
+placeholder="Your Message"
+class="w-full p-3 rounded-lg bg-transparent border border-gray-600 h-32 text-white">
+</textarea>
+
+<button onclick="sendEmail()" class="btn-gold">
+Send Message
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function sendEmail(){
+
+let email = document.getElementById("fromEmail").value;
+let message = document.getElementById("message").value;
+
+let subject = "Message from my Website";
+
+let body = "From: " + email + "%0D%0A%0D%0A" + message;
+
+window.location.href =
+"mailto:yourgmail@gmail.com?subject=" + subject + "&body=" + body;
+
+}
+
+</script>
+
+<script>
+
+function showSection(sectionId){
+
+document.querySelectorAll('.section').forEach(function(section){
+section.classList.remove('active');
+});
+
+document.getElementById(sectionId).classList.add('active');
+
+}
+
+function sendEmail(){
+
+let email = document.getElementById("fromEmail").value;
+let message = document.getElementById("message").value;
+
+let subject = "Message from my Website";
+
+let body = "From: " + email + "\n\n" + message;
+
+let mailtoLink =
+"mailto:jhelamaepderigay@gmail.com?subject=" + encodeURIComponent(subject) +
+"&body=" + encodeURIComponent(body);
+
+window.location.href = mailtoLink;
+
+}
+
+</script>
+
+</body>
+</html>
